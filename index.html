@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suyash Saxena | AI • IoT • Gaming</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght=300;400;600;700&family=JetBrains+Mono:wght=400;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --bg:#060912;
+    --card:#111827;
+    --surface:#1c2536;
+    --text:#e5e7eb;
+    --sub:#94a3b8;
+    --accent:#00eaff;
+    --accent2:#7c3aed;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    overflow-x:hidden;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:40px;
+}
+
+section{
+    padding:80px 0;
+}
+
+h1,h2,h3{
+    font-family:'JetBrains Mono',monospace;
+}
+
+.highlight{
+    color:var(--accent);
+    text-shadow:0 0 15px rgba(0,234,255,.5);
+}
+
+#hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+#hero h1{
+    font-size:70px;
+}
+
+.subtitle{
+    font-size:28px;
+    margin-top:20px;
+    color:var(--sub);
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* Blinking cursor effect */
+#typing::after {
+    content: "|";
+    color: var(--accent);
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.hero-text{
+    max-width:700px;
+    margin-top:30px;
+    font-size:20px;
+}
+
+.btn{
+    margin-top:40px;
+    padding:15px 30px;
+    background:var(--accent);
+    color:black;
+    font-weight:700;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:18px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px rgba(0,234,255,.5);
+}
+
+.section-title{
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.card{
+    background:var(--card);
+    padding:35px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(0,234,255,.2);
+}
+
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:25px;
+}
+
+.skill{
+    padding:12px 18px;
+    background:#0b1220;
+    border:1px solid var(--accent);
+    border-radius:999px;
+    font-family:'JetBrains Mono', monospace;
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.project{
+    background:var(--card);
+    padding:30px;
+    border-radius:20px;
+    transition:.3s;
+}
+
+.project:hover{
+    border:1px solid var(--accent);
+    transform:translateY(-6px);
+}
+
+.project h3{
+    margin:15px 0;
+}
+
+footer{
+    padding:60px;
+    text-align:center;
+    color:var(--sub);
+}
+
+.status{
+    margin-top:15px;
+    color:var(--accent);
+}
+
+@media(max-width:900px){
+    .grid{
+        grid-template-columns:1fr;
+    }
+    #hero h1{
+        font-size:48px;
+    }
+    .subtitle{
+        font-size:22px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <section id="hero">
+        <p style="color:var(--accent)">> booting_system.exe</p>
+        <h1>I'm <span class="highlight">Suyash Saxena</span></h1>
+        <div class="subtitle">
+            <span id="typing"></span>
+        </div>
+        <p class="hero-text">
+            I love building smart devices, experimenting with AI, creating Minecraft experiences, and learning how technology works behind the scenes.
+        </p>
+        <button class="btn">Explore My Projects</button>
+    </section>
+
+    <section>
+        <h2 class="section-title">About Me</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Who am I?</h3>
+                <br>
+                <p>I'm a student who enjoys combining creativity with technology. I build projects with ESP32, learn about AI, and explore new ideas every day.</p>
+                <br>
+                <p>My goal is to create things that are useful, futuristic, and fun.</p>
+            </div>
+            <div class="card">
+                <h3>Tech Stack</h3>
+                <div class="skills">
+                    <div class="skill">ESP32</div>
+                    <div class="skill">Arduino</div>
+                    <div class="skill">AI</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">IoT</div>
+                    <div class="skill">Minecraft</div>
+                    <div class="skill">RTX 5060 Ti</div>
+                    <div class="skill">Problem Solving</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h1>🌡️</h1>
+                <h3>Smart Weather Station</h3>
+                <p>ESP32 + DHT11 weather monitoring system with live dashboard.</p>
+            </div>
+            <div class="project">
+                <h1>💡</h1>
+                <h3>WiFi LED Controller</h3>
+                <p>Control room lights from any device using an ESP32.</p>
+            </div>
+            <div class="project">
+                <h1>🤖</h1>
+                <h3>AI Experiments</h3>
+                <p>Running and testing local AI models.</p>
+            </div>
+            <div class="project">
+                <h1>🎮</h1>
+                <h3>Minecraft Shader Showcase</h3>
+                <p>Beautiful shader packs optimized for my gaming PC.</p>
+            </div>
+            <div class="project">
+                <h1>🖥️</h1>
+                <h3>Desktop Setup</h3>
+                <p>Custom RTX 5060 Ti desktop build.</p>
+            </div>
+            <div class="project">
+                <h1>📡</h1>
+                <h3>IoT Dashboard</h3>
+                <p>Sensor data visualization using a web interface.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Designed by Suyash Saxena © 2026</p>
+        <p class="status">Status: Always Learning 🚀</p>
+    </footer>
+
+</div>
+
+<script>
+const words=[
+    "AI Explorer",
+    "ESP32 Builder",
+    "8th Grade Innovator",
+    "Minecraft Enthusiast",
+    "Creative Problem Solver"
+];
+
+let word=0;
+let letter=0;
+let deleting=false;
+const element=document.getElementById("typing");
+
+function animate(){
+    let current = words[word];
+    
+    if(!deleting){
+        element.textContent = current.substring(0, letter + 1);
+        letter++;
+    } else {
+        element.textContent = current.substring(0, letter);
+        letter--;
+    }
+    
+    let speed = 100;
+    
+    if(!deleting && letter === current.length){
+        deleting = true;
+        speed = 2000; // Pause at full word
+    }
+    
+    if(deleting && letter === 0){
+        deleting = false;
+        word = (word + 1) % words.length;
+        speed = 500; // Pause before typing next word
+    }
+    
+    setTimeout(animate, speed);
+}
+
+animate();
+</script>
+
+</body>
+</html>
